@@ -86,7 +86,12 @@ const nextConfig = {
   // @opentelemetry/api: Has platform-specific code incompatible with Workers runtime
   serverExternalPackages: ['drizzle-kit', 'esbuild-register', 'esbuild', '@opentelemetry/api'],
   images: {
+    unoptimized: true,
     remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "api.pandafloat.com",
+      },
       {
         protocol: "http" as const,
         hostname: "localhost",

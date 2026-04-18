@@ -21,7 +21,7 @@
   "d1_databases": [
     {
       "binding": "DB",
-      "database_id": "ff3f3e29-01bf-4ffa-9826-3897676844b2",
+      "database_id": "98bc2cba-a3d8-4214-8847-03975f5d93fd",
       "database_name": "cc3-payload-db",
       "remote": true,
     },
@@ -51,35 +51,34 @@
       "invocation_logs": true,
     },
   },
-
   // Environment variables for production
   "vars": {
     "NODE_ENV": "production",
   },
-
   // Mark packages as external to avoid bundling issues
   "rules": [
     {
       "type": "ESModule",
-      "globs": ["**/@opentelemetry/api"],
+      "globs": [
+        "**/@opentelemetry/api"
+      ],
       "fallthrough": true
     }
   ],
-
   // Environment-specific configurations
   "env": {
     "production": {
       "name": "cc3-storefront",
       "vars": {
         "NODE_ENV": "production",
-        "MEDUSA_BACKEND_URL": "https://casual-chic.medusajs.app",
-        "NEXT_PUBLIC_MEDUSA_PUBLISHABLE_KEY": "pk_f086d3c7cf6026676f9eef829d75bfcfdc8ca77ae1eeafbb2e06d367938ac456",
+        "MEDUSA_BACKEND_URL": "https://api.pandafloat.com",
+        "NEXT_PUBLIC_MEDUSA_PUBLISHABLE_KEY": "pk_dd213a7cac0b73b16eb12d677b63661ee91b9fc8d2d20d198c4fb8106b87be76",
         "PAYLOAD_SECRET": "670ba53416dab189c6de776c664d0845b92aeeaa02b5dadd222c304087c08a1b",
       },
       "d1_databases": [
         {
           "binding": "DB",
-          "database_id": "ff3f3e29-01bf-4ffa-9826-3897676844b2",
+          "database_id": "98bc2cba-a3d8-4214-8847-03975f5d93fd",
           "database_name": "cc3-payload-db",
           "remote": true,
         },
