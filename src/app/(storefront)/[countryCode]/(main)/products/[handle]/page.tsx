@@ -1,5 +1,7 @@
 import { Metadata } from "next"
 import { notFound } from "next/navigation"
+
+export const dynamic = "force-dynamic"
 import { listProducts } from "@lib/data/products"
 import { getRegion, listRegions } from "@lib/data/regions"
 import ProductTemplate from "@modules/products/templates"
@@ -42,8 +44,7 @@ export async function generateStaticParams() {
       .filter((param) => param.handle)
   } catch (error) {
     console.error(
-      `Failed to generate static paths for product pages: ${
-        error instanceof Error ? error.message : "Unknown error"
+      `Failed to generate static paths for product pages: ${error instanceof Error ? error.message : "Unknown error"
       }.`
     )
     return []

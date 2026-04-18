@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic"
+
 import { Metadata } from "next"
 import { getBaseURL } from "@lib/util/env"
 
