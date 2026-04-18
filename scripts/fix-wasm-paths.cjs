@@ -10,10 +10,10 @@ if (fs.existsSync(handlerPath)) {
     // 核心手术：
     // 寻找所有以 "/opt/buildhome/repo" 开头的绝对路径导入
     // 将其更正为相对于 handler.mjs 的正确位置
-    const regex = /from\s*["']\/opt\/buildhome\/repo\/\.open-next\/server-functions\/default\/(.*?)["']/g;
+    const regex = /from\s*["']\/opt\/buildhome\/repo\/\.open-next\/server-functions\/default\/(node_modules\/.*?)["']/g;
     const fixedContent = content.replace(regex, (match, p1) => {
-        console.log(`🔧 Correcting path: ${match} -> from "./${p1}"`);
-        return `from "./${p1}"`;
+        console.log(`🔧 Correcting path to root: ${match} -> from "../../../${p1}"`);
+        return `from "../../../${p1}"`;
     });
 
     if (content !== fixedContent) {
