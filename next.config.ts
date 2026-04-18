@@ -90,25 +90,17 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
+        hostname: "**",
+      },
+      {
+        protocol: "http",
+        hostname: "**",
+      },
+      {
+        protocol: "https",
         hostname: "api.pandafloat.com",
       },
-      {
-        protocol: "http" as const,
-        hostname: "localhost",
-      },
-      {
-        protocol: "https" as const,
-        hostname: "medusa-public-images.s3.eu-west-1.amazonaws.com",
-      },
-      {
-        protocol: "https" as const,
-        hostname: "medusa-server-testing.s3.amazonaws.com",
-      },
-      {
-        protocol: "https" as const,
-        hostname: "medusa-server-testing.s3.us-east-1.amazonaws.com",
-      },
-    ],
+    ] as any,
   },
   // Cloudflare-specific webpack config (fallback only)
   // Note: Turbopack is the default bundler in Next.js 16
