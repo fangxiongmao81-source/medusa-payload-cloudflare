@@ -1,7 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "main": ".open-next/worker.js",
-  "name": "cc3-storefront",
+  "name": "medusa-payload-cloudflare",
   "compatibility_date": "2025-09-15",
   "compatibility_flags": [
     // Enable Node.js API
@@ -54,6 +54,9 @@
   // Environment variables for production
   "vars": {
     "NODE_ENV": "production",
+    "MEDUSA_BACKEND_URL": "https://api.pandafloat.com",
+    "NEXT_PUBLIC_MEDUSA_PUBLISHABLE_KEY": "pk_dd213a7cac0b73b16eb12d677b63661ee91b9fc8d2d20d198c4fb8106b87be76",
+    "PAYLOAD_SECRET": "670ba53416dab189c6de776c664d0845b92aeeaa02b5dadd222c304087c08a1b"
   },
   // Mark packages as external to avoid bundling issues
   "rules": [
@@ -66,30 +69,5 @@
     }
   ],
   // Environment-specific configurations
-  "env": {
-    "production": {
-      "name": "cc3-storefront",
-      "vars": {
-        "NODE_ENV": "production",
-        "MEDUSA_BACKEND_URL": "https://api.pandafloat.com",
-        "NEXT_PUBLIC_MEDUSA_PUBLISHABLE_KEY": "pk_dd213a7cac0b73b16eb12d677b63661ee91b9fc8d2d20d198c4fb8106b87be76",
-        "PAYLOAD_SECRET": "670ba53416dab189c6de776c664d0845b92aeeaa02b5dadd222c304087c08a1b",
-      },
-      "d1_databases": [
-        {
-          "binding": "DB",
-          "database_id": "98bc2cba-a3d8-4214-8847-03975f5d93fd",
-          "database_name": "cc3-payload-db",
-          "remote": true,
-        },
-      ],
-      "services": [],
-      "r2_buckets": [
-        {
-          "binding": "R2",
-          "bucket_name": "cc3-media",
-        },
-      ],
-    },
-  },
+  "env": {}
 }
