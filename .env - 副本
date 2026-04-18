@@ -1,0 +1,25 @@
+# A generated secret for Payload (generate with: openssl rand -hex 32)
+PAYLOAD_SECRET=
+
+# Optional: Secret for anonymizing user identifiers in logs (GDPR-compliant)
+# Used to generate HMAC-SHA256 hashes of user emails for error logging
+# Generate with: openssl rand -hex 32
+# If not set, user IDs will be omitted from error logs entirely
+LOG_SECRET=
+
+# Medusa Backend Configuration
+# Your Medusa backend URL (e.g., https://your-backend.com)
+NEXT_PUBLIC_MEDUSA_BACKEND_URL=
+# Alternative: use MEDUSA_BACKEND_URL for server-side only
+MEDUSA_BACKEND_URL=
+
+# Medusa Publishable API Key
+# Get this from your Medusa admin dashboard
+NEXT_PUBLIC_MEDUSA_PUBLISHABLE_KEY=
+
+# Security: URL Validation Whitelist (Optional)
+# Comma-separated list of allowed redirect domains for link validation
+# Prevents open redirect vulnerabilities by restricting external links
+# Example: ALLOWED_REDIRECT_DOMAINS=example.com,trusted-site.org,partner.net
+# If not set, all HTTPS/HTTP URLs are allowed (validates protocol only)
+ALLOWED_REDIRECT_DOMAINS=

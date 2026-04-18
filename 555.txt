@@ -1,0 +1,182 @@
+PS D:\pandafloat\medusa-payload-cloudflare> pnpm run build
+
+> meridian@1.0.0 build D:\pandafloat\medusa-payload-cloudflare
+> cross-env NODE_OPTIONS="--no-deprecation --max-old-space-size=8000" next build --webpack && node scripts/patch-opentelemetry.cjs && opennextjs-cloudflare build --skipNextBuild && node scripts/patch-middleware-tracer.cjs && node scripts/patch-middleware-handler.cjs
+
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+
+🚫 Error: Missing required environment variables
+
+  NEXT_PUBLIC_MEDUSA_PUBLISHABLE_KEY
+    Learn how to create a publishable key: https://docs.medusajs.com/v2/resources/storefront-development/publishable-api-keys
+
+  MEDUSA_BACKEND_URL or NEXT_PUBLIC_MEDUSA_BACKEND_URL
+    At least one backend URL is required. Set MEDUSA_BACKEND_URL for server-only or NEXT_PUBLIC_MEDUSA_BACKEND_URL for client-side access.
+
+
+Please set these variables in your .env file or environment before starting the application.
+
+ ELIFECYCLE  Command failed with exit code 1.
+PS D:\pandafloat\medusa-payload-cloudflare> pnpm run build
+
+> meridian@1.0.0 build D:\pandafloat\medusa-payload-cloudflare
+> cross-env NODE_OPTIONS="--no-deprecation --max-old-space-size=8000" next build --webpack && node scripts/patch-opentelemetry.cjs && opennextjs-cloudflare build --skipNextBuild && node scripts/patch-middleware-tracer.cjs && node scripts/patch-middleware-handler.cjs
+
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+   ▲ Next.js 16.0.0 (webpack)
+   - Environments: .env
+
+   Creating an optimized production build ...
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+Browserslist: browsers data (caniuse-lite) is 6 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+ ✓ Compiled successfully in 38.6s
+ ✓ Finished TypeScript in 8.4s
+   Collecting page data  ..[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+   Collecting page data  ...Error in listCategories: Error: Failed to fetch categories: Bad Request
+    at g (D:\pandafloat\medusa-payload-cloudflare\.next\server\chunks\3069.js:1:11192)
+    at async Object.o [as generateStaticParams] (D:\pandafloat\medusa-payload-cloudflare\.next\server\app\(storefront)\[countryCode]\(main)\categories\[...category]\page.js:2:13103)
+   Collecting page data  .Error fetching regions: 400 {
+  type: 'not_allowed',
+  message: 'A valid publishable key is required to proceed with the request'
+}
+Error in listRegions: Error: Failed to fetch regions: Bad Request
+    at i (D:\pandafloat\medusa-payload-cloudflare\.next\server\chunks\7704.js:1:19784)
+    at async Object.o [as generateStaticParams] (D:\pandafloat\medusa-payload-cloudflare\.next\server\app\(storefront)\[countryCode]\(main)\categories\[...category]\page.js:2:13140)
+Failed to generate static params for categories: Error: Failed to fetch regions: Bad Request
+    at i (D:\pandafloat\medusa-payload-cloudflare\.next\server\chunks\7704.js:1:19784)
+    at async Object.o [as generateStaticParams] (D:\pandafloat\medusa-payload-cloudflare\.next\server\app\(storefront)\[countryCode]\(main)\categories\[...category]\page.js:2:13140)
+Error fetching regions: 400 {
+  type: 'not_allowed',
+  message: 'A valid publishable key is required to proceed with the request'
+}
+Error in listRegions: Error: Failed to fetch regions: Bad Request
+    at i (D:\pandafloat\medusa-payload-cloudflare\.next\server\chunks\7704.js:1:19784)
+    at async Object.K [as generateStaticParams] (D:\pandafloat\medusa-payload-cloudflare\.next\server\app\(storefront)\[countryCode]\(main)\products\[handle]\page.js:2:55636)
+Failed to generate static paths for product pages: Failed to fetch regions: Bad Request.
+   Collecting page data  ..Error in listCollections: Error: Failed to fetch collections: Bad Request
+    at j (D:\pandafloat\medusa-payload-cloudflare\.next\server\chunks\3069.js:1:25144)
+    at async Object.n [as generateStaticParams] (D:\pandafloat\medusa-payload-cloudflare\.next\server\app\(storefront)\[countryCode]\(main)\collections\[handle]\page.js:1:1223)
+   Collecting page data  ...Error fetching regions: 400 {
+  type: 'not_allowed',
+  message: 'A valid publishable key is required to proceed with the request'
+}
+Error in listRegions: Error: Failed to fetch regions: Bad Request
+    at i (D:\pandafloat\medusa-payload-cloudflare\.next\server\chunks\7704.js:1:19784)
+    at async Object.n [as generateStaticParams] (D:\pandafloat\medusa-payload-cloudflare\.next\server\app\(storefront)\[countryCode]\(main)\collections\[handle]\page.js:1:1281)
+Failed to generate static params for collections: Error: Failed to fetch regions: Bad Request
+    at i (D:\pandafloat\medusa-payload-cloudflare\.next\server\chunks\7704.js:1:19784)
+    at async Object.n [as generateStaticParams] (D:\pandafloat\medusa-payload-cloudflare\.next\server\app\(storefront)\[countryCode]\(main)\collections\[handle]\page.js:1:1281)
+ ✓ Collecting page data in 3.0s
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ ✓ Generating static pages (10/10) in 1034.2ms
+ ✓ Collecting build traces in 24.0s
+ ✓ Finalizing page optimization in 24.8s
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ƒ /[countryCode]
+├ ƒ /[countryCode]/account
+├ ƒ /[countryCode]/account/addresses
+├ ƒ /[countryCode]/account/orders
+├ ƒ /[countryCode]/account/orders/details/[id]
+├ ƒ /[countryCode]/account/profile
+├ ƒ /[countryCode]/cart
+├ ● /[countryCode]/categories/[...category]
+├ ƒ /[countryCode]/checkout
+├ ● /[countryCode]/collections/[handle]
+├ ƒ /[countryCode]/order/[id]/confirmed
+├ ƒ /[countryCode]/order/[id]/transfer/[token]
+├ ƒ /[countryCode]/order/[id]/transfer/[token]/accept
+├ ƒ /[countryCode]/order/[id]/transfer/[token]/decline
+├ ● /[countryCode]/products/[handle]
+├ ƒ /[countryCode]/store
+├ ƒ /admin/[[...segments]]
+├ ƒ /api/[...slug]
+├ ƒ /api/graphql
+├ ƒ /api/graphql-playground
+├ ƒ /debug-env
+├ ƒ /my-route
+├ ○ /opengraph-image-utz4wr.jpg
+├ ○ /opengraph-image.jpg
+├ ○ /test
+├ ○ /twitter-image-utz4wr.jpg
+└ ○ /twitter-image.jpg
+
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+
+⚠️  Tracer file not found, skipping OpenTelemetry patch
+
+┌─────────────────────────────┐
+│ OpenNext — Cloudflare build │
+└─────────────────────────────┘
+
+WARN OpenNext is not fully compatible with Windows.
+WARN For optimal performance, it is recommended to use Windows Subsystem for Linux (WSL).
+WARN While OpenNext may function on Windows, it could encounter unpredictable failures during runtime.
+App directory: D:\pandafloat\medusa-payload-cloudflare
+Next.js version : 16.0.0
+@opennextjs/cloudflare version: 1.11.0
+@opennextjs/aws version: 3.8.5
+WARN Skipping Next.js build
+
+┌──────────────────────────────┐
+│ OpenNext — Generating bundle │
+└──────────────────────────────┘
+
+Bundling middleware function...
+Bundling static assets...
+Bundling cache assets...
+Building server function: default...
+Applying code patches: 6.231s
+# copyPackageTemplateFiles
+⚙️ Bundling the OpenNext server...
+
+▲ [WARNING] Duplicate key "options" in object literal [duplicate-object-key]
+
+    .open-next/server-functions/default/.next/server/chunks/3378.js:24:38407:
+      24 │ ...:{}:c?(0,d.UE)({element:c,padding:e}).fn(b):{}},options:[a,b]})},8255:(a,b,c)=>{"use strict";Object.de...
+         ╵                                                    ~~~~~~~
+
+  The original key "options" is here:
+
+    .open-next/server-functions/default/.next/server/chunks/3378.js:24:38181:
+      24 │ ....jD)(a),options:[a,b]}),s=(a,b)=>({name:"arrow",options:a,fn(b){let{element:c,padding:e}="function"==t...
+         ╵                                                    ~~~~~~~
+
+Worker saved in `.open-next\worker.js` 🚀
+
+OpenNext build complete.
+�Ҳ����ļ� - -TYPE
+�Ҳ����ļ� - F
+�Ҳ����ļ� - -PATH
+⚠️  Could not locate tracer file: Command failed: find "D:\pandafloat\medusa-payload-cloudflare\.open-next\middleware" -type f -path "*/lib/trace/tracer.js"
+�Ҳ����ļ� - -TYPE
+�Ҳ����ļ� - F
+�Ҳ����ļ� - -PATH
+
+⚠️  No import.meta.url patterns found to patch
+First 300 chars:
+import {Buffer} from "node:buffer";
+globalThis.Buffer = Buffer;
+
+import {AsyncLocalStorage} from "node:async_hooks";
+globalThis.AsyncLocalStorage = AsyncLocalStorage;
+
+
+const defaultDefineProperty = Object.defineProperty;
+Object.defineProperty = function(o, p, a) {
+  if(p=== '__import_unsupported'
+PS D:\pandafloat\medusa-payload-cloudflare>
